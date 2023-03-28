@@ -3,7 +3,7 @@
 <p align="center">
     <img alt="GitHub" src="https://img.shields.io/github/license/WENGSYX/Neural-Comprehension">
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/WENGSYX/Neural-Comprehension">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/WENGSYX/Neural-Comprehension">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/WENGSYX/Neural-Comprehension">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/WENGSYX/Neural-Comprehension">
 </p>
 
