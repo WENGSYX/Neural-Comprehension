@@ -60,7 +60,7 @@ model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
 #### Use CoNN from huggingface
 
 ```
-from CoNN.modeling_conn import CoNNModel
+from NeuralComprehension.CoNN.modeling_conn import CoNNModel
 from tracr4torch import Tokenizer
 
 
