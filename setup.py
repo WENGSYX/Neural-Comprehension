@@ -27,6 +27,7 @@ setuptools.setup(
     install_requires=[
         "pytorch",
         'tracr',
-        'transformers'
+        'transformers',
+        'tracr'
     ],
 )
