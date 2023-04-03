@@ -61,7 +61,7 @@ model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
 
 ```
 from NeuralComprehension.CoNN.modeling_conn import CoNNModel
-from tracr4torch import Tokenizer
+from NeuralComprehension.tracr4torch import Tokenizer
 
 
 model = CoNNModel.from_pretrained('WENGSYX/CoNN_Reverse')
