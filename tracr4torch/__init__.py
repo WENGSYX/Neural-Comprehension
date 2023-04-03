@@ -6,8 +6,8 @@ import re
 import copy
 import dill
 from collections import OrderedDict
-from ..CoNN.configuration_conn import CoNNConfig
-from ..CoNN.modeling_conn import CoNNModel
+from CoNN.configuration_conn import CoNNConfig
+from CoNN.modeling_conn import CoNNModel
 
 def get_CoNN(file_path='',model=''):
 
@@ -35,7 +35,7 @@ def get_CoNN(file_path='',model=''):
         use_argmax = False
         unembedding = torch.zeros(config.hidden_size, 1)
         for kr, vr in {model.residual_labels[n]: n for n in range(len(model.residual_labels))}.items():
-            if re.search(r"^output_\d+:{}$".format(k), kr):
+            if 'output_18' == kr:
                 unembedding[vr, 0] = 1
     else:
         use_argmax = True
@@ -79,7 +79,7 @@ def get_CoNN(file_path='',model=''):
     conn = CoNNModel._from_config(config)
     conn.load_state_dict(model_state)
     conn.set_unembedding(unembedding)
-    tokenizer = Tokenizer(model.config.input_encoding_map, model.config.output_encoding_map,config.max_position_embeddings)
+    tokenizer = Tokenizer(model.config.input_encoding_map, model.config.output_encoding_map,model.config.max_position_embeddings)
 
     return conn,tokenizer
 
@@ -103,6 +103,17 @@ class Tokenizer:
             return torch.tensor(tokens)
         return tokens
 
+    def __call__(self, text,return_tensor='pt'):
+        tokens = []
+        for word in text.strip().split():
+
+            if word in self.vocab:
+                tokens.append(self.vocab[word])
+        tokens = [self.vocab.get('bos')] + tokens[-self.max_length+1:]
+        if return_tensor == 'pt':
+            return torch.tensor(tokens)
+        return tokens
+    
     def decode(self,output):
         texts = [[] * output.size(0)]
         output = output.cpu().tolist()
