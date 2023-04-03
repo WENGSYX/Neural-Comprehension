@@ -15,5 +15,6 @@ This repository contains code, models, and other related resources of our paper 
 
 
 ****
+* [2023/04/03] We have published the paper!
 * [2023/03/26] We created the Github library!
 ****
