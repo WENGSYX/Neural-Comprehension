@@ -35,7 +35,7 @@ def get_CoNN(file_path='',model=''):
         use_argmax = False
         unembedding = torch.zeros(config.hidden_size, 1)
         for kr, vr in {model.residual_labels[n]: n for n in range(len(model.residual_labels))}.items():
-            if 'output_18' == kr:
+            if re.search(r"^output_\d+:{}$".format(k), kr):
                 unembedding[vr, 0] = 1
     else:
         use_argmax = True
