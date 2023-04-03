@@ -15,6 +15,8 @@ This repository contains code, models, and other related resources of our paper 
 
 
 ****
+* [2023/04/04] We have used huggingface to release the weight of the CoNN model!
+* [2023/04/04] We have released the code for AutoCoNN!
 * [2023/04/03] We have published the paper!
 * [2023/03/26] We created the Github library!
 ****
