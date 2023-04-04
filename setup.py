@@ -17,7 +17,7 @@
 import setuptools
 
 setuptools.setup(
-    name="NeuralComprehension",
+    name="NeuralCom",
     version="1.0.0",
     url="https://github.com/WENGSYX/Neural-Comprehension",
     author="Yixuan Weng",
@@ -25,7 +25,7 @@ setuptools.setup(
     description="Incorporating Neural Network Compilation into a Language Model Framework",
     packages=setuptools.find_packages(),
     install_requires=[
-        "pytorch",
+        "torch",
         'tracr',
         'transformers',
         'tracr'
