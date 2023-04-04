@@ -28,6 +28,5 @@ setuptools.setup(
         "torch",
         'tracr',
         'transformers',
-        'tracr'
     ],
 )
