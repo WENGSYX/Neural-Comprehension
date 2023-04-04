@@ -30,7 +30,7 @@ This repository contains code, models, and other related resources of our paper 
 
 ```
 git clone https://github.com/WENGSYX/Neural-Comprehension
-cd apex
+cd Neural-Comprehension
 pip install .
 ```
 
@@ -41,7 +41,7 @@ To run neural comprehension, you need to install `PyTorch`, `Transformers`, `jax
 #### Use AutoCoNN to create your CoNN
 
 ```python
-from NeuralComprehension.AutoCoNN import AutoCoNN
+from NeuralCom.AutoCoNN import AutoCoNN
 
 INSTRUCT = 'Create an SOp that is the last letter of a word'
 VOCAB = ['a','b','c','d','e','f','g']
@@ -60,8 +60,8 @@ model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
 #### Use CoNN from huggingface
 
 ```
-from NeuralComprehension.CoNN.modeling_conn import CoNNModel
-from NeuralComprehension.tracr4torch import Tokenizer
+from NeuralCom.CoNN.modeling_conn import CoNNModel
+from NeuralCom.CoNN import Tokenizer
 
 
 model = CoNNModel.from_pretrained('WENGSYX/CoNN_Reverse')
