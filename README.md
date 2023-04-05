@@ -12,7 +12,7 @@
 
 **[Contact]** If you have any questions, feel free to contact me via (wengsyx@gmail.com).
 
-This repository contains code, models, and other related resources of our paper ["Neural Comprehension: Language Models with Compiled Neural Networks"](https://github.com/WENGSYX/Neural-Comprehension).
+This repository contains code, models, and other related resources of our paper ["Neural Comprehension: Language Models with Compiled Neural Networks"](https://arxiv.org/abs/2304.01665).
 
 
 ****
@@ -26,7 +26,7 @@ This repository contains code, models, and other related resources of our paper 
 
 
 
-#### Install 
+### Install 
 
 ```
 git clone https://github.com/WENGSYX/Neural-Comprehension
@@ -35,10 +35,14 @@ pip install .
 ```
 
 To run neural comprehension, you need to install `PyTorch`, `Transformers`, `jax`, and `tracr`.
+```
+# https://beta.openai.com/account/api-keys
+export OPENAI_API_KEY=(YOUR OPENAI API KEY)
+```
 
+### Use AutoCoNN to create your CoNN
 
-
-#### Use AutoCoNN to create your CoNN
+Please note that setting an OpenAI Key is required to use AutoCoNN (but not necessary if you're just experimenting with neural cognition and CoNN models).
 
 ```python
 from NeuralCom.AutoCoNN import AutoCoNN
@@ -57,9 +61,9 @@ model,tokenizer = auto(instruct=INSTRUCT,vocab=VOCAB,example=EXAMPLE)
 
 
 
-#### Use CoNN from huggingface
+### Use CoNN from huggingface
 
-```
+```python
 from NeuralCom.CoNN.modeling_conn import CoNNModel
 from NeuralCom.CoNN import Tokenizer
 
@@ -74,7 +78,9 @@ print(tokenizer.decode(output.argmax(2)))
 
 
 
-##### Huggingface Model
+#### Huggingface Model
+
+In each link, we provide detailed instructions on how to use the CoNN model.
 
 | Model Name  | Model Size | Model Address                                             |
 | ----------- | ---------- | --------------------------------------------------------- |
@@ -85,4 +91,21 @@ print(tokenizer.decode(output.argmax(2)))
 | Add_Carry   | 117K       | [[link]](https://huggingface.co/WENGSYX/CoNN_Add_Carry)   |
 | Sub_Carry   | 117K       | [[link]](https://huggingface.co/WENGSYX/CoNN_Sub_Carry)   |
 
-In each link, we provide detailed instructions on how to use the CoNN model.
+###### If you have also created some amazing CoNN, you are welcome to share them publicly with us.
+
+
+
+### Cite
+
+
+###### If you are interested in our paper, please feel free to cite it.
+```
+@misc{weng2023neural,
+      title={Neural Comprehension: Language Models with Compiled Neural Networks}, 
+      author={Yixuan Weng and Minjun Zhu and Fei Xia and Bin Li and Shizhu He and Kang Liu and Jun Zhao},
+      year={2023},
+      eprint={2304.01665},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
