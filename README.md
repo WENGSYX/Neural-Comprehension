@@ -94,6 +94,13 @@ In each link, we provide detailed instructions on how to use the CoNN model.
 ###### If you have also created some amazing CoNN, you are welcome to share them publicly with us.
 
 
+## 🌱 Neural-Comprehension's Roadmap 🌱
+
+
+Our future plan includes but not limited to :
+- [ ] One-click implementation of integration between CoNN and PLM (huggingface)
+- [ ] Combining CoNN with LLM (API-based)
+- [ ] Demo Presentation
 
 ### Cite
 
