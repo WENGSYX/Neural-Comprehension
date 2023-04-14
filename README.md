@@ -102,7 +102,7 @@ Our future plan includes but not limited to :
 - [ ] Combining CoNN with LLM (API-based)
 - [ ] Demo Presentation
 
-### Cite
+### 🙏Cite🙏
 
 
 ###### If you are interested in our paper, please feel free to cite it.
