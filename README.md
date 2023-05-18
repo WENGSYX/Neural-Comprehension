@@ -1,4 +1,4 @@
-# Neural Comprehension: Language Models with Compiled Neural Networks
+# Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks
 
 <p align="center">
     <img alt="GitHub" src="https://img.shields.io/github/license/WENGSYX/Neural-Comprehension.svg?color=blue&style=flat-square">
