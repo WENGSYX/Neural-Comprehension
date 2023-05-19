@@ -18,7 +18,7 @@ import setuptools
 
 setuptools.setup(
     name="NeuralCom",
-    version="1.0.0",
+    version="1.0.1",
     url="https://github.com/WENGSYX/Neural-Comprehension",
     author="Yixuan Weng",
     author_email="wengsyx@qq.com",

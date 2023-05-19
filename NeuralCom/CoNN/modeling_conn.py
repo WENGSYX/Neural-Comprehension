@@ -85,7 +85,7 @@ class CoNNEmbeddings(nn.Module):
     ) -> torch.Tensor:
 
         embeddings = self.word_embeddings(input_ids)
-        position_embeddings = self.position_embeddings(torch.tensor(list(range(input_ids.size(1)))))
+        position_embeddings = self.position_embeddings(torch.tensor(list(range(input_ids.size(1)))).to(input_ids.device))
         embeddings += position_embeddings
         embeddings = self.dropout(embeddings)
         return embeddings

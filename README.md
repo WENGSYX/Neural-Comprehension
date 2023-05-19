@@ -77,6 +77,27 @@ print(tokenizer.decode(output.argmax(2)))
 ```
 
 
+### One-click implementation for Neural-Comprehension
+
+```python
+from transformers import AutoModel,AutoTokenizer,AutoModelForSeq2SeqLM
+from NeuralCom.CoNN.modeling_conn import CoNNModel
+from NeuralCom.CoNN import Tokenizer as CoNNTokenizer
+from NeuralCom.Model import NCModelForCoinFlip
+
+PLM = AutoModelForSeq2SeqLM.from_pretrained('WENGSYX/PLM_T5_Base_coin_flip')
+CoNN = CoNNModel.from_pretrained('WENGSYX/CoNN_Parity')
+PLMTokenizer = AutoTokenizer.from_pretrained('WENGSYX/PLM_T5_Base_coin_flip')
+CoNNTokenizer = CoNNTokenizer(CoNN.config.input_encoding_map, CoNN.config.output_encoding_map,CoNN.config.max_position_embeddings)
+
+neural_comprehension = NCModelForCoinFlip(PLM, CoNN, PLMTokenizer, CoNNTokenizer).to('cuda:0')
+input_text = "A coin is heads up. Aaron flips the coin. Julius does not flip the coin. Yixuan Weng flip the coin. Minjun Zhu does not flip the coin. Is the coin still heads up?"
+input_tokens_PLM = PLMTokenizer.encode(input_text, return_tensors='pt')
+generated_output = neural_comprehension.generate(input_tokens_PLM.to('cuda:0'))
+generated_text = PLMTokenizer.decode(generated_output, skip_special_tokens=True)
+print(f"Output: {generated_text}")
+```
+
 
 #### Huggingface Model
 
@@ -98,7 +119,7 @@ In each link, we provide detailed instructions on how to use the CoNN model.
 
 
 Our future plan includes but not limited to :
-- [ ] One-click implementation of integration between CoNN and PLM (huggingface)
+- [x] One-click implementation of integration between CoNN and PLM (huggingface)
 - [ ] Combining CoNN with LLM (API-based)
 - [ ] Demo Presentation
 

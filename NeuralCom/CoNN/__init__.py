@@ -30,10 +30,13 @@ class Tokenizer:
             return torch.tensor(tokens)
         return tokens
 
-    def decode(self,output):
+    def decode(self,output,add_bos=True):
         texts = [[] * output.size(0)]
         output = output.cpu().tolist()
 
         for n in range(len(output)):
             texts[n] = [str(self.decoder_vocab[x]) for x in output[n]]
-        return [['bos']+t[1:] for t in texts]
+        if add_bos:
+            return [['bos']+t[1:] for t in texts]
+        else:
+            return texts
