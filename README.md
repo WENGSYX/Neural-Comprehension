@@ -12,11 +12,12 @@
 
 **[Contact]** If you have any questions, feel free to contact me via (wengsyx@gmail.com).
 
-This repository contains code, models, and other related resources of our paper ["Neural Comprehension: Language Models with Compiled Neural Networks"](https://arxiv.org/abs/2304.01665).
+This repository contains code, models, and other related resources of our paper ["Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks"](https://arxiv.org/abs/2304.01665).
 
 
 ****
-
+* [2023/05/19] We have supported the one-click implementation of integration between CoNN and PLM!
+* [2023/05/18] We have published the ["paper-v2"](https://arxiv.org/abs/2304.01665v2)!
 * [2023/04/04] We have used huggingface to release the weight of the CoNN model!
 * [2023/04/04] We have released the code for AutoCoNN!
 * [2023/04/03] We have published the paper!
