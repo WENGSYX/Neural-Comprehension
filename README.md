@@ -129,8 +129,8 @@ Our future plan includes but not limited to :
 
 ###### If you are interested in our paper, please feel free to cite it.
 ```
-@misc{weng2023neural,
-      title={Neural Comprehension: Language Models with Compiled Neural Networks}, 
+@misc{weng2023mastering,
+      title={Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks}, 
       author={Yixuan Weng and Minjun Zhu and Fei Xia and Bin Li and Shizhu He and Kang Liu and Jun Zhao},
       year={2023},
       eprint={2304.01665},
