@@ -30,6 +30,10 @@ This repository contains code, models, and other related resources of our paper 
 ### Install 
 
 ```
+git clone https://github.com/deepmind/tracr
+cd tracr
+pip3 install .
+cd ..
 git clone https://github.com/WENGSYX/Neural-Comprehension
 cd Neural-Comprehension
 pip install .
