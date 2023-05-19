@@ -98,9 +98,14 @@ CoNNTokenizer = CoNNTokenizer(CoNN.config.input_encoding_map, CoNN.config.output
 neural_comprehension = NCModelForCoinFlip(PLM, CoNN, PLMTokenizer, CoNNTokenizer).to('cuda:0')
 input_text = "A coin is heads up. Aaron flips the coin. Julius does not flip the coin. Yixuan Weng flip the coin. Minjun Zhu does not flip the coin. Is the coin still heads up?"
 input_tokens_PLM = PLMTokenizer.encode(input_text, return_tensors='pt')
-generated_output = neural_comprehension.generate(input_tokens_PLM.to('cuda:0'))
-generated_text = PLMTokenizer.decode(generated_output, skip_special_tokens=True)
-print(f"Output: {generated_text}")
+NC_generated_output = neural_comprehension.generate(input_tokens_PLM.to('cuda:0'))
+NC_generated_text = PLMTokenizer.decode(NC_generated_output, skip_special_tokens=True)
+
+Vanilla_generated_output = PLM.generate(input_tokens_PLM.to('cuda:0'))
+Vanilla_generated_text = PLMTokenizer.decode(NC_generated_output, skip_special_tokens=True)
+
+print(f"Vanilla Output: {Vanilla_generated_text}")
+print(f"Neural Comprehension Output: {NC_generated_text}")
 ```
 
 
