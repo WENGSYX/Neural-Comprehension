@@ -34,6 +34,7 @@ git clone https://github.com/deepmind/tracr
 cd tracr
 pip3 install .
 cd ..
+
 git clone https://github.com/WENGSYX/Neural-Comprehension
 cd Neural-Comprehension
 pip install .
