@@ -16,6 +16,7 @@ This repository contains code, models, and other related resources of our paper 
 
 
 ****
+* [2023/06/21] We release the accompanying project [Lingo](https://github.com/WENGSYX/Lingo)!
 * [2023/05/19] We have supported the one-click implementation of integration between CoNN and PLM!
 * [2023/05/18] We have published the ["paper-v2"](https://arxiv.org/abs/2304.01665v2)!
 * [2023/04/04] We have used huggingface to release the weight of the CoNN model!
