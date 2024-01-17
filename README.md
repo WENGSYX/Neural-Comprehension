@@ -1,4 +1,4 @@
-# Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks
+# Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks (ICLR 2024)
 
 <p align="center">
     <img alt="GitHub" src="https://img.shields.io/github/license/WENGSYX/Neural-Comprehension.svg?color=blue&style=flat-square">
@@ -16,6 +16,7 @@ This repository contains code, models, and other related resources of our paper 
 
 
 ****
+* [2024/01/16] The Paper accepted in ICLR 2024 Poster!
 * [2023/06/21] We release the accompanying project [Lingo](https://github.com/WENGSYX/Lingo)!
 * [2023/05/19] We have supported the one-click implementation of integration between CoNN and PLM!
 * [2023/05/18] We have published the ["paper-v2"](https://arxiv.org/abs/2304.01665v2)!
