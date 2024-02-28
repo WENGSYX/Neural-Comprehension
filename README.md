@@ -133,20 +133,19 @@ In each link, we provide detailed instructions on how to use the CoNN model.
 
 Our future plan includes but not limited to :
 - [x] One-click implementation of integration between CoNN and PLM (huggingface)
-- [ ] Combining CoNN with LLM (API-based)
-- [ ] Demo Presentation
+- [x] Demo Presentation
 
 ### 🙏Cite🙏
 
 
 ###### If you are interested in our paper, please feel free to cite it.
 ```
-@misc{weng2023mastering,
-      title={Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks}, 
-      author={Yixuan Weng and Minjun Zhu and Fei Xia and Bin Li and Shizhu He and Kang Liu and Jun Zhao},
-      year={2023},
-      eprint={2304.01665},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{
+weng2024mastering,
+title={Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks},
+author={Yixuan Weng and Minjun Zhu and Fei Xia and Bin Li and Shizhu He and Kang Liu and Jun Zhao},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=9nsNyN0vox}
 }
 ```
