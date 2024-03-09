@@ -19,6 +19,7 @@ This repository contains code, models, and other related resources of our paper 
 
 
 ****
+* [2024/03/08] We release the [carame ready verison](https://openreview.net/forum?id=9nsNyN0vox) for this paper!
 * [2024/01/16] The Paper accepted in ICLR 2024 Poster!
 * [2023/06/21] We release the accompanying project [Lingo](https://github.com/WENGSYX/Lingo)!
 * [2023/05/19] We have supported the one-click implementation of integration between CoNN and PLM!
