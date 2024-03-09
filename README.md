@@ -13,9 +13,7 @@
 
 **[Contact]** If you have any questions, feel free to contact me via (wengsyx@gmail.com).
 
-<p align="center">
-<a src="https://openreview.net/forum?id=9nsNyN0vox">OpenReview</a>
-</p>
+**[Openreview]** You can view the peer review comments during the review period or raise an open discussion [here](https://openreview.net/forum?id=9nsNyN0vox).
 
 This repository contains code, models, and other related resources of our paper ["Mastering Symbolic Operations: Augmenting Language Models with Compiled Neural Networks"](https://arxiv.org/abs/2304.01665).
 
