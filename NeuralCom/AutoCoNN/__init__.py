@@ -82,7 +82,7 @@ Comparison.FALSE: lambda key, query: False,
                 exec(code)
 
     def __call__(self, instruct,vocab=['a','b','c'], example=[], LLM_name='text-davich-003', generation_number=10,
-                 temperature=0.6, max_length=256, stop='\n\n', auto_save=True, return_torch=True):
+                 temperature=0.6, max_length=256, stop='\n\n', auto_save=True, return_torch=True,model_name='custom_model'):
         """The main process of generating a CoNN
         Args:
             instruct: the 'insturct' text for generated.
